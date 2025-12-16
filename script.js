@@ -6,7 +6,7 @@
 		this.age=age;
 	}
 	 greet(){
-       console.log(`Hello, my name is ${this.name},I am ${this.age} years old.`)
+       console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`)
 	 }
  }
 class Employee extendss Person{
