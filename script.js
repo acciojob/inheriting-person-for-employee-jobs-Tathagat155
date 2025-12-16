@@ -14,6 +14,7 @@ Animal.prototype.jobGreet=function(){
         console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`)	
 }
 Animal.prototype=Object.create(Person.prototype)
+Animal.prototype.constructor = Animal;
 // Do not change code below this line
 window.Person = Person;
 window.Employee = Employee;
