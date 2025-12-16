@@ -6,13 +6,13 @@ function Person(name,age){
 Person.prototype.greet=function(){
 	console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`)
 }
-function Animal(name,age,jobTitle){
+function Employee(name,age,jobTitle){
 	Person.call(this,name,age)
 	this.jobTitle=jobTitle;
 }
-Animal.prototype=Object.create(Person.prototype)
-Animal.prototype.constructor = Animal;
-Animal.prototype.jobGreet=function(){
+Employee.prototype=Object.create(Person.prototype)
+Employee.prototype.constructor = Animal;
+Employee.prototype.jobGreet=function(){
 console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`)	
 }
 // Do not change code below this line
